@@ -22,7 +22,7 @@ public class OnPremiseOrderAbstract extends OrderAbstractClass {
 
     @Override
     public String getOrderInfo() {
-        return String.format("On premise order, contents: %s, total price: %.2f, table's number: %d, number of customers: %s",
+        return String.format("On premise order, contents: %s, total price: %.2f, table's number: %d, number of customers: %d",
                 Arrays.toString(orderInfo.items()), orderInfo.totalPrice(), tableNumber, noOfCustomers);
     }
 }
